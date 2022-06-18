@@ -1,0 +1,113 @@
+
+.carta{
+    position: relative;
+    width: 350px;
+    height: 190px;/*190px;*/
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.carta:hover{
+    height: 450px;
+}
+
+.img{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0.15);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.carta:hover .img{
+    width: 250px;
+    height: 250px;
+}
+
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta .contenedord{
+    margin-top: -30px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.carta .contenedord .detalles{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform:  translateY(150px);
+}
+
+.carta:hover .contenedord .detalles{
+    transform: translateY(0);
+}
+
+.carta .contenedord .detalles h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #646464;
+    line-height: 1.2em;
+}
+
+.carta .contenedord .detalles h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.carta .contenedord .detalles .datos{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.carta .contenedord .detalles .datos h3{
+    font-size: 1em;
+    color: #646464;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+.carta .contenedord .detalles .datos h3 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.carta .contenedord .detalles .boton{
+    display: flex;
+    justify-content: space-between;
+    /*gap: 20px;*/
+}
+
+.carta .contenedord .detalles .boton button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: #646464;
+    color: white;
+    cursor: pointer;
+}
